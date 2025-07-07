@@ -116,9 +116,13 @@ ${formData.message}`;
                 </div>
                 <Button 
                   type="submit"
-                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-6 text-lg"
+                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-6 text-lg flex items-center justify-center gap-2"
                 >
-                  <Send className="h-5 w-5 mr-2" />
+                  <img 
+                    src="/lovable-uploads/01e636d7-7ca8-47cf-a97f-47b4d0390a04.png" 
+                    alt="WhatsApp" 
+                    className="h-5 w-5"
+                  />
                   Enviar via WhatsApp
                 </Button>
               </form>

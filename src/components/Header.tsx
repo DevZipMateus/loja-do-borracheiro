@@ -51,7 +51,7 @@ const Header = () => {
       </div>
 
       {/* Header principal */}
-      <header className={`fixed top-6 sm:top-8 left-0 right-0 z-50 transition-all duration-300 ${
+      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled ? 'bg-background/95 backdrop-blur-md shadow-soft' : 'bg-transparent'
       }`}>
         <div className="container mx-auto px-4 py-3 sm:py-4">
@@ -99,8 +99,13 @@ const Header = () => {
               </button>
               <Button 
                 onClick={() => window.open('https://wa.me/5551995048546', '_blank')}
-                className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold flex items-center gap-2"
               >
+                <img 
+                  src="/lovable-uploads/01e636d7-7ca8-47cf-a97f-47b4d0390a04.png" 
+                  alt="WhatsApp" 
+                  className="h-4 w-4"
+                />
                 WhatsApp
               </Button>
             </nav>
@@ -153,8 +158,13 @@ const Header = () => {
                 <div className="pt-2 mt-2 border-t border-border/50">
                   <Button 
                     onClick={() => window.open('https://wa.me/5551995048546', '_blank')}
-                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-3"
+                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-3 flex items-center justify-center gap-2"
                   >
+                    <img 
+                      src="/lovable-uploads/01e636d7-7ca8-47cf-a97f-47b4d0390a04.png" 
+                      alt="WhatsApp" 
+                      className="h-4 w-4"
+                    />
                     WhatsApp
                   </Button>
                 </div>

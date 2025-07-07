@@ -32,7 +32,11 @@ const WhatsAppButton = () => {
           <div className="flex justify-between items-start mb-2">
             <div className="flex items-center gap-2">
               <div className="w-6 h-6 sm:w-8 sm:h-8 bg-primary rounded-full flex items-center justify-center">
-                <MessageCircle className="h-3 w-3 sm:h-4 sm:w-4 text-primary-foreground" />
+                <img 
+                  src="/lovable-uploads/01e636d7-7ca8-47cf-a97f-47b4d0390a04.png" 
+                  alt="WhatsApp" 
+                  className="h-3 w-3 sm:h-4 sm:w-4"
+                />
               </div>
               <div>
                 <h4 className="font-semibold text-card-foreground text-xs sm:text-sm">LOJA DO BORRACHEIRO</h4>
@@ -67,7 +71,11 @@ const WhatsAppButton = () => {
           className="h-12 w-12 sm:h-14 sm:w-14 rounded-full bg-green-500 hover:bg-green-600 text-white shadow-strong hover:shadow-xl transition-all duration-300 hover:scale-110"
           size="icon"
         >
-          <MessageCircle className="h-5 w-5 sm:h-6 sm:w-6" />
+          <img 
+            src="/lovable-uploads/01e636d7-7ca8-47cf-a97f-47b4d0390a04.png" 
+            alt="WhatsApp" 
+            className="h-5 w-5 sm:h-6 sm:w-6"
+          />
         </Button>
         
         {/* Pulse Animation */}
