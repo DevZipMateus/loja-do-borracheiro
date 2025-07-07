@@ -1,14 +1,63 @@
+User-agent: *
+Allow: /
+
+# Permitir todos os bots de busca principais
 User-agent: Googlebot
 Allow: /
 
 User-agent: Bingbot
 Allow: /
 
-User-agent: Twitterbot
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
 Allow: /
 
 User-agent: facebookexternalhit
 Allow: /
 
-User-agent: *
+User-agent: Twitterbot
 Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+# Bloquear caminhos administrativos e irrelevantes
+Disallow: /admin/
+Disallow: /login/
+Disallow: /private/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /_next/
+Disallow: /api/auth/
+Disallow: /dashboard/
+Disallow: /panel/
+
+# Permitir crawling de arquivos importantes
+Allow: /sitemap.xml
+Allow: /robots.txt
+Allow: /*.css
+Allow: /*.js
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
+Allow: /*.svg
+Allow: /*.webp
+
+# Sitemap
+Sitemap: https://lojadoborracheiroirs.com.br/sitemap.xml
+
+# Crawl-delay para ser respeitoso com os recursos do servidor
+Crawl-delay: 1

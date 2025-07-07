@@ -1,80 +1,167 @@
-import { Search, User, ShoppingCart, Menu, Phone } from "lucide-react";
+import { useState, useEffect } from "react";
+import { Menu, X, Phone, Mail, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      setIsMenuOpen(false);
+    }
+  };
+
   return (
-    <header className="bg-primary text-primary-foreground">
+    <>
       {/* Top bar com informações de contato */}
-      <div className="border-b border-white/20">
-        <div className="container mx-auto px-4 py-2">
-          <div className="flex justify-between items-center text-sm">
-            <div className="flex items-center gap-6">
+      <div className="bg-secondary text-secondary-foreground py-2 text-sm">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div className="flex flex-wrap items-center gap-4">
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
-                <span>54 9 9948.6962</span>
+                <a href="tel:51995048546" className="hover:text-primary transition-colors">
+                  (51) 99504-8546
+                </a>
               </div>
               <div className="flex items-center gap-2">
-                <Phone className="h-4 w-4" />
-                <span>54 3452.2010</span>
+                <Mail className="h-4 w-4" />
+                <a href="mailto:lojadoborracheiro2020@gmail.com" className="hover:text-primary transition-colors">
+                  lojadoborracheiro2020@gmail.com
+                </a>
               </div>
-            </div>
-            <div className="hidden md:block">
-              <span className="font-medium">FVA DISTRIBUIDORA DE MATERIAL PARA BORRACHARIA</span>
             </div>
             <div className="flex items-center gap-2">
-              <span>Siga-nos:</span>
-              {/* Social icons would go here */}
+              <MapPin className="h-4 w-4" />
+              <span>São Leopoldo/RS</span>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Main header */}
-      <div className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between gap-4">
-          {/* Logo */}
-          <div className="flex-shrink-0">
-            <div className="bg-white text-primary px-6 py-2 rounded font-bold text-2xl">
-              FVA
-            </div>
-          </div>
-
-          {/* Search bar */}
-          <div className="flex-1 max-w-2xl mx-8">
-            <div className="relative">
-              <Input
-                type="text"
-                placeholder="O QUE VOCÊ PROCURA?"
-                className="w-full pl-4 pr-12 py-3 rounded-full border-0 text-foreground placeholder:text-muted-foreground"
+      {/* Header principal */}
+      <header className={`fixed top-8 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled ? 'bg-background/95 backdrop-blur-md shadow-soft' : 'bg-transparent'
+      }`}>
+        <div className="container mx-auto px-4 py-4">
+          <div className="flex items-center justify-between">
+            {/* Logo */}
+            <div className="flex items-center gap-3">
+              <img 
+                src="/lovable-uploads/01e636d7-7ca8-47cf-a97f-47b4d0390a04.png" 
+                alt="LOJA DO BORRACHEIRO RS Logo" 
+                className="h-12 w-auto"
               />
-              <Button 
-                size="sm" 
-                className="absolute right-1 top-1/2 -translate-y-1/2 rounded-full h-8 w-8 p-0 bg-accent hover:bg-accent/90"
-              >
-                <Search className="h-4 w-4" />
-              </Button>
             </div>
+
+            {/* Desktop Navigation */}
+            <nav className="hidden lg:flex items-center gap-8">
+              <button 
+                onClick={() => scrollToSection('inicio')}
+                className="text-foreground hover:text-primary transition-colors font-medium"
+              >
+                Início
+              </button>
+              <button 
+                onClick={() => scrollToSection('sobre')}
+                className="text-foreground hover:text-primary transition-colors font-medium"
+              >
+                Sobre
+              </button>
+              <button 
+                onClick={() => scrollToSection('servicos')}
+                className="text-foreground hover:text-primary transition-colors font-medium"
+              >
+                Serviços
+              </button>
+              <button 
+                onClick={() => scrollToSection('localizacao')}
+                className="text-foreground hover:text-primary transition-colors font-medium"
+              >
+                Localização
+              </button>
+              <button 
+                onClick={() => scrollToSection('contato')}
+                className="text-foreground hover:text-primary transition-colors font-medium"
+              >
+                Contato
+              </button>
+              <Button 
+                onClick={() => window.open('https://wa.me/5551995048546', '_blank')}
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold"
+              >
+                WhatsApp
+              </Button>
+            </nav>
+
+            {/* Mobile menu button */}
+            <Button 
+              variant="ghost" 
+              size="icon"
+              className="lg:hidden"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </Button>
           </div>
 
-          {/* Navigation */}
-          <div className="flex items-center gap-4">
-            <Button variant="ghost" className="text-primary-foreground hover:bg-white/10">
-              PRODUTOS
-            </Button>
-            <Button variant="ghost" size="icon" className="text-primary-foreground hover:bg-white/10">
-              <User className="h-5 w-5" />
-            </Button>
-            <Button variant="ghost" size="icon" className="text-primary-foreground hover:bg-white/10">
-              <ShoppingCart className="h-5 w-5" />
-            </Button>
-            <Button variant="ghost" size="icon" className="md:hidden text-primary-foreground hover:bg-white/10">
-              <Menu className="h-5 w-5" />
-            </Button>
-          </div>
+          {/* Mobile Navigation */}
+          {isMenuOpen && (
+            <nav className="lg:hidden mt-4 py-4 border-t bg-background/95 backdrop-blur-md rounded-lg shadow-soft">
+              <div className="flex flex-col space-y-3 px-4">
+                <button 
+                  onClick={() => scrollToSection('inicio')}
+                  className="text-left text-foreground hover:text-primary transition-colors font-medium py-2"
+                >
+                  Início
+                </button>
+                <button 
+                  onClick={() => scrollToSection('sobre')}
+                  className="text-left text-foreground hover:text-primary transition-colors font-medium py-2"
+                >
+                  Sobre
+                </button>
+                <button 
+                  onClick={() => scrollToSection('servicos')}
+                  className="text-left text-foreground hover:text-primary transition-colors font-medium py-2"
+                >
+                  Serviços
+                </button>
+                <button 
+                  onClick={() => scrollToSection('localizacao')}
+                  className="text-left text-foreground hover:text-primary transition-colors font-medium py-2"
+                >
+                  Localização
+                </button>
+                <button 
+                  onClick={() => scrollToSection('contato')}
+                  className="text-left text-foreground hover:text-primary transition-colors font-medium py-2"
+                >
+                  Contato
+                </button>
+                <Button 
+                  onClick={() => window.open('https://wa.me/5551995048546', '_blank')}
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold mt-2"
+                >
+                  WhatsApp
+                </Button>
+              </div>
+            </nav>
+          )}
         </div>
-      </div>
-    </header>
+      </header>
+    </>
   );
 };
 
