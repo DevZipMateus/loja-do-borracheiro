@@ -33,7 +33,7 @@ const WhatsAppButton = () => {
             <div className="flex items-center gap-2">
               <div className="w-6 h-6 sm:w-8 sm:h-8 bg-primary rounded-full flex items-center justify-center">
                 <img 
-                  src="/lovable-uploads/01e636d7-7ca8-47cf-a97f-47b4d0390a04.png" 
+                  src="/lovable-uploads/6da1d5af-1680-4789-bb4b-93fb54ac6f13.png" 
                   alt="WhatsApp" 
                   className="h-3 w-3 sm:h-4 sm:w-4"
                 />
@@ -72,7 +72,7 @@ const WhatsAppButton = () => {
           size="icon"
         >
           <img 
-            src="/lovable-uploads/01e636d7-7ca8-47cf-a97f-47b4d0390a04.png" 
+            src="/lovable-uploads/6da1d5af-1680-4789-bb4b-93fb54ac6f13.png" 
             alt="WhatsApp" 
             className="h-5 w-5 sm:h-6 sm:w-6"
           />

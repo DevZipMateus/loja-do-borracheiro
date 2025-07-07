@@ -24,31 +24,6 @@ const Header = () => {
 
   return (
     <>
-      {/* Top bar com informações de contato */}
-      <div className="bg-secondary text-secondary-foreground py-2 text-xs sm:text-sm">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-4">
-            <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
-              <div className="flex items-center gap-2">
-                <Phone className="h-3 w-3 sm:h-4 sm:w-4" />
-                <a href="tel:51995048546" className="hover:text-primary transition-colors">
-                  (51) 99504-8546
-                </a>
-              </div>
-              <div className="flex items-center gap-2">
-                <Mail className="h-3 w-3 sm:h-4 sm:w-4" />
-                <a href="mailto:lojadoborracheiro2020@gmail.com" className="hover:text-primary transition-colors truncate max-w-[200px] sm:max-w-none">
-                  lojadoborracheiro2020@gmail.com
-                </a>
-              </div>
-            </div>
-            <div className="flex items-center gap-2">
-              <MapPin className="h-3 w-3 sm:h-4 sm:w-4" />
-              <span className="text-xs sm:text-sm">São Leopoldo/RS</span>
-            </div>
-          </div>
-        </div>
-      </div>
 
       {/* Header principal */}
       <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -59,7 +34,7 @@ const Header = () => {
             {/* Logo */}
             <div className="flex items-center gap-3">
               <img 
-                src="/lovable-uploads/01e636d7-7ca8-47cf-a97f-47b4d0390a04.png" 
+                src="/lovable-uploads/6da1d5af-1680-4789-bb4b-93fb54ac6f13.png" 
                 alt="LOJA DO BORRACHEIRO RS Logo" 
                 className="h-10 sm:h-12 w-auto"
               />
@@ -102,7 +77,7 @@ const Header = () => {
                 className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold flex items-center gap-2"
               >
                 <img 
-                  src="/lovable-uploads/01e636d7-7ca8-47cf-a97f-47b4d0390a04.png" 
+                  src="/lovable-uploads/6da1d5af-1680-4789-bb4b-93fb54ac6f13.png" 
                   alt="WhatsApp" 
                   className="h-4 w-4"
                 />
@@ -161,7 +136,7 @@ const Header = () => {
                     className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-3 flex items-center justify-center gap-2"
                   >
                     <img 
-                      src="/lovable-uploads/01e636d7-7ca8-47cf-a97f-47b4d0390a04.png" 
+                      src="/lovable-uploads/6da1d5af-1680-4789-bb4b-93fb54ac6f13.png" 
                       alt="WhatsApp" 
                       className="h-4 w-4"
                     />
