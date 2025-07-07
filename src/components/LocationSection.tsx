@@ -8,21 +8,21 @@ const LocationSection = () => {
   };
 
   return (
-    <section id="localizacao" className="py-20 bg-background">
+    <section id="localizacao" className="py-12 sm:py-16 lg:py-20 bg-background">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4 sm:mb-6">
             Nossa Localização
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Visite nossa loja física em São Leopoldo ou agende uma visita de nossa equipe na sua empresa
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-start">
           {/* Map */}
-          <div className="relative">
+          <div className="relative order-2 lg:order-1">
             <Card className="overflow-hidden shadow-strong">
               <CardContent className="p-0">
                 <div className="aspect-video bg-muted flex items-center justify-center relative">
@@ -39,9 +39,9 @@ const LocationSection = () => {
                   ></iframe>
                   <div className="absolute inset-0 bg-primary/20 flex items-center justify-center">
                     <div className="text-center text-white">
-                      <MapPin className="h-12 w-12 mx-auto mb-4" />
-                      <p className="text-lg font-semibold">Mapa Interativo</p>
-                      <p className="text-sm opacity-90">São Leopoldo/RS</p>
+                      <MapPin className="h-8 w-8 sm:h-12 sm:w-12 mx-auto mb-4" />
+                      <p className="text-base sm:text-lg font-semibold">Mapa Interativo</p>
+                      <p className="text-xs sm:text-sm opacity-90">São Leopoldo/RS</p>
                     </div>
                   </div>
                 </div>
@@ -50,15 +50,15 @@ const LocationSection = () => {
             
             <Button 
               onClick={handleDirections}
-              className="absolute bottom-4 right-4 bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg"
+              className="absolute bottom-4 right-4 bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg text-sm sm:text-base"
             >
-              <Navigation className="h-4 w-4 mr-2" />
+              <Navigation className="h-3 w-3 sm:h-4 sm:w-4 mr-2" />
               Como Chegar
             </Button>
           </div>
 
           {/* Contact Info */}
-          <div className="space-y-8">
+          <div className="space-y-6 sm:space-y-8 order-1 lg:order-2">
             <Card className="hover:shadow-soft transition-all duration-300 bg-card border-border/50">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">

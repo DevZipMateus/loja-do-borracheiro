@@ -69,20 +69,20 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="servicos" className="py-20 bg-muted/30">
+    <section id="servicos" className="py-12 sm:py-16 lg:py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4 sm:mb-6">
             Nossos Serviços
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Oferecemos soluções completas para borracharias e auto centers com produtos de qualidade e atendimento especializado
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mb-16 sm:mb-20">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
@@ -90,20 +90,20 @@ const ServicesSection = () => {
                 <CardHeader className="pb-4">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="bg-primary p-3 rounded-xl group-hover:scale-110 transition-transform">
-                      <Icon className="h-8 w-8 text-primary-foreground" />
+                      <Icon className="h-6 w-6 sm:h-8 sm:w-8 text-primary-foreground" />
                     </div>
-                    <CardTitle className="text-xl text-card-foreground group-hover:text-primary transition-colors">
+                    <CardTitle className="text-lg sm:text-xl text-card-foreground group-hover:text-primary transition-colors">
                       {service.title}
                     </CardTitle>
                   </div>
-                  <p className="text-muted-foreground leading-relaxed">{service.description}</p>
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{service.description}</p>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-3">
+                  <ul className="space-y-2 sm:space-y-3">
                     {service.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center gap-3">
-                        <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                        <span className="text-card-foreground">{feature}</span>
+                      <li key={featureIndex} className="flex items-start gap-3">
+                        <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span className="text-sm sm:text-base text-card-foreground">{feature}</span>
                       </li>
                     ))}
                   </ul>
@@ -114,22 +114,22 @@ const ServicesSection = () => {
         </div>
 
         {/* Differentials */}
-        <div className="bg-primary/5 rounded-3xl p-8 lg:p-12">
-          <h3 className="text-3xl font-bold text-center text-foreground mb-12">
+        <div className="bg-primary/5 rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-12">
+          <h3 className="text-2xl sm:text-3xl font-bold text-center text-foreground mb-8 sm:mb-12">
             Nossos Diferenciais
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-6 sm:mb-8">
             {differentials.map((differential, index) => {
               const Icon = differential.icon;
               return (
                 <div key={index} className="text-center group">
                   <div className="flex justify-center mb-4">
-                    <div className="bg-primary p-4 rounded-full group-hover:scale-110 transition-transform">
-                      <Icon className="h-8 w-8 text-primary-foreground" />
+                    <div className="bg-primary p-3 sm:p-4 rounded-full group-hover:scale-110 transition-transform">
+                      <Icon className="h-6 w-6 sm:h-8 sm:w-8 text-primary-foreground" />
                     </div>
                   </div>
-                  <h4 className="text-xl font-semibold text-foreground mb-3">{differential.title}</h4>
-                  <p className="text-muted-foreground leading-relaxed">{differential.description}</p>
+                  <h4 className="text-lg sm:text-xl font-semibold text-foreground mb-3">{differential.title}</h4>
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{differential.description}</p>
                 </div>
               );
             })}
@@ -139,7 +139,7 @@ const ServicesSection = () => {
             <Button 
               size="lg"
               onClick={() => window.open('https://wa.me/5551995048546', '_blank')}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-lg rounded-full"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg rounded-full min-h-[48px]"
             >
               Solicite um Orçamento
             </Button>

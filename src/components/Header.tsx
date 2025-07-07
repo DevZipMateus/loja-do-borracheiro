@@ -25,43 +25,43 @@ const Header = () => {
   return (
     <>
       {/* Top bar com informações de contato */}
-      <div className="bg-secondary text-secondary-foreground py-2 text-sm">
+      <div className="bg-secondary text-secondary-foreground py-2 text-xs sm:text-sm">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col sm:flex-row justify-between items-center gap-2">
-            <div className="flex flex-wrap items-center gap-4">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-4">
+            <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
               <div className="flex items-center gap-2">
-                <Phone className="h-4 w-4" />
+                <Phone className="h-3 w-3 sm:h-4 sm:w-4" />
                 <a href="tel:51995048546" className="hover:text-primary transition-colors">
                   (51) 99504-8546
                 </a>
               </div>
               <div className="flex items-center gap-2">
-                <Mail className="h-4 w-4" />
-                <a href="mailto:lojadoborracheiro2020@gmail.com" className="hover:text-primary transition-colors">
+                <Mail className="h-3 w-3 sm:h-4 sm:w-4" />
+                <a href="mailto:lojadoborracheiro2020@gmail.com" className="hover:text-primary transition-colors truncate max-w-[200px] sm:max-w-none">
                   lojadoborracheiro2020@gmail.com
                 </a>
               </div>
             </div>
             <div className="flex items-center gap-2">
-              <MapPin className="h-4 w-4" />
-              <span>São Leopoldo/RS</span>
+              <MapPin className="h-3 w-3 sm:h-4 sm:w-4" />
+              <span className="text-xs sm:text-sm">São Leopoldo/RS</span>
             </div>
           </div>
         </div>
       </div>
 
       {/* Header principal */}
-      <header className={`fixed top-8 left-0 right-0 z-50 transition-all duration-300 ${
+      <header className={`fixed top-6 sm:top-8 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled ? 'bg-background/95 backdrop-blur-md shadow-soft' : 'bg-transparent'
       }`}>
-        <div className="container mx-auto px-4 py-4">
+        <div className="container mx-auto px-4 py-3 sm:py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center gap-3">
               <img 
                 src="/lovable-uploads/01e636d7-7ca8-47cf-a97f-47b4d0390a04.png" 
                 alt="LOJA DO BORRACHEIRO RS Logo" 
-                className="h-12 w-auto"
+                className="h-10 sm:h-12 w-auto"
               />
             </div>
 
@@ -118,44 +118,46 @@ const Header = () => {
 
           {/* Mobile Navigation */}
           {isMenuOpen && (
-            <nav className="lg:hidden mt-4 py-4 border-t bg-background/95 backdrop-blur-md rounded-lg shadow-soft">
-              <div className="flex flex-col space-y-3 px-4">
+            <nav className="lg:hidden absolute top-full left-0 right-0 mt-2 py-4 bg-background/98 backdrop-blur-md rounded-lg shadow-strong border border-border/50 mx-4 animate-fade-in">
+              <div className="flex flex-col space-y-1 px-4">
                 <button 
                   onClick={() => scrollToSection('inicio')}
-                  className="text-left text-foreground hover:text-primary transition-colors font-medium py-2"
+                  className="text-left text-foreground hover:text-primary hover:bg-primary/5 transition-colors font-medium py-3 px-2 rounded-md"
                 >
                   Início
                 </button>
                 <button 
                   onClick={() => scrollToSection('sobre')}
-                  className="text-left text-foreground hover:text-primary transition-colors font-medium py-2"
+                  className="text-left text-foreground hover:text-primary hover:bg-primary/5 transition-colors font-medium py-3 px-2 rounded-md"
                 >
                   Sobre
                 </button>
                 <button 
                   onClick={() => scrollToSection('servicos')}
-                  className="text-left text-foreground hover:text-primary transition-colors font-medium py-2"
+                  className="text-left text-foreground hover:text-primary hover:bg-primary/5 transition-colors font-medium py-3 px-2 rounded-md"
                 >
                   Serviços
                 </button>
                 <button 
                   onClick={() => scrollToSection('localizacao')}
-                  className="text-left text-foreground hover:text-primary transition-colors font-medium py-2"
+                  className="text-left text-foreground hover:text-primary hover:bg-primary/5 transition-colors font-medium py-3 px-2 rounded-md"
                 >
                   Localização
                 </button>
                 <button 
                   onClick={() => scrollToSection('contato')}
-                  className="text-left text-foreground hover:text-primary transition-colors font-medium py-2"
+                  className="text-left text-foreground hover:text-primary hover:bg-primary/5 transition-colors font-medium py-3 px-2 rounded-md"
                 >
                   Contato
                 </button>
-                <Button 
-                  onClick={() => window.open('https://wa.me/5551995048546', '_blank')}
-                  className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold mt-2"
-                >
-                  WhatsApp
-                </Button>
+                <div className="pt-2 mt-2 border-t border-border/50">
+                  <Button 
+                    onClick={() => window.open('https://wa.me/5551995048546', '_blank')}
+                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-3"
+                  >
+                    WhatsApp
+                  </Button>
+                </div>
               </div>
             </nav>
           )}
