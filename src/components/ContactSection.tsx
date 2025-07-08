@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Phone, Mail, MapPin, Send, Facebook, Instagram } from "lucide-react";
+import { Phone, Mail, MapPin, Send, Facebook, Instagram, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -118,11 +118,7 @@ ${formData.message}`;
                   type="submit"
                   className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-6 text-lg flex items-center justify-center gap-2"
                 >
-                  <img 
-                    src="/lovable-uploads/whatsapp-icon.png" 
-                    alt="WhatsApp" 
-                    className="h-5 w-5"
-                  />
+                  <MessageCircle className="h-5 w-5" />
                   Enviar via WhatsApp
                 </Button>
               </form>
