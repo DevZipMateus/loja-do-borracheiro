@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Phone, Mail, MapPin, MessageCircle } from "lucide-react";
+import { Menu, X, Phone, Mail, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
@@ -76,7 +76,11 @@ const Header = () => {
                 onClick={() => window.open('https://wa.me/5551995048546', '_blank')}
                 className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold flex items-center gap-2"
               >
-                <MessageCircle className="h-4 w-4" />
+                <img 
+                  src="/lovable-uploads/99f33249-a010-4276-ba41-9e76e59a952d.png" 
+                  alt="WhatsApp" 
+                  className="h-4 w-4"
+                />
                 WhatsApp
               </Button>
             </nav>
@@ -131,7 +135,11 @@ const Header = () => {
                     onClick={() => window.open('https://wa.me/5551995048546', '_blank')}
                     className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-3 flex items-center justify-center gap-2"
                   >
-                    <MessageCircle className="h-4 w-4" />
+                    <img 
+                      src="/lovable-uploads/99f33249-a010-4276-ba41-9e76e59a952d.png" 
+                      alt="WhatsApp" 
+                      className="h-4 w-4"
+                    />
                     WhatsApp
                   </Button>
                 </div>
