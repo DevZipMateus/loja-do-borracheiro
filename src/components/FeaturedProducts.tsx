@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -5,35 +6,35 @@ import { Badge } from "@/components/ui/badge";
 const products = [
   {
     id: 1,
-    name: "Câmara De Ar 12.4 x 24 - TR 218 - FVA FV174",
-    image: "/placeholder-product-1.jpg",
-    price: "R$ 89,90",
-    oldPrice: "R$ 99,90",
+    name: "Abraçadeira Metálica Regulável",
+    image: "/lovable-uploads/3e0cc181-0ac9-41a2-a562-d72f089b2895.png",
+    price: "R$ 15,90",
+    oldPrice: "R$ 18,90",
     badge: "NOVO"
   },
   {
     id: 2,
-    name: "Câmara de ar GR 13/14 FVA FV1374",
-    image: "/placeholder-product-2.jpg", 
-    price: "R$ 45,50",
-    oldPrice: "R$ 52,90",
+    name: "Câmara De Ar 12.4 x 24 - TR 218 - FVA FV174",
+    image: "/placeholder-product-1.jpg",
+    price: "R$ 89,90",
+    oldPrice: "R$ 99,90",
     badge: "OFERTA"
   },
   {
     id: 3,
+    name: "Câmara de ar GR 13/14 FVA FV1374",
+    image: "/placeholder-product-2.jpg", 
+    price: "R$ 45,50",
+    oldPrice: "R$ 52,90",
+    badge: "DESTAQUE"
+  },
+  {
+    id: 4,
     name: "Adesivo Pastilhado De Ferro 10/05 E10055",
     image: "/placeholder-product-3.jpg",
     price: "R$ 12,90",
     oldPrice: null,
     badge: null
-  },
-  {
-    id: 4,
-    name: "Chave De Impacto 1 FVA 450 KG - Força FV450",
-    image: "/placeholder-product-4.jpg",
-    price: "R$ 289,90",
-    oldPrice: "R$ 329,90",
-    badge: "DESTAQUE"
   }
 ];
 
@@ -56,9 +57,17 @@ const FeaturedProducts = () => {
               <CardContent className="p-0">
                 {/* Product image */}
                 <div className="relative aspect-square bg-muted rounded-t-lg overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-                    <div className="text-4xl font-bold text-primary/20">FVA</div>
-                  </div>
+                  {product.image.startsWith('/lovable-uploads/') ? (
+                    <img 
+                      src={product.image} 
+                      alt={product.name}
+                      className="w-full h-full object-contain p-4"
+                    />
+                  ) : (
+                    <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
+                      <div className="text-4xl font-bold text-primary/20">FVA</div>
+                    </div>
+                  )}
                   
                   {product.badge && (
                     <Badge 
