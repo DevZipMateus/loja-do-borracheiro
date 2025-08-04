@@ -1,3 +1,4 @@
+
 import { ArrowRight, Star, Users, Clock, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -93,7 +94,7 @@ const HeroSection = () => {
               <div className="bg-secondary/10 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 shadow-strong">
                 <div className="aspect-square bg-gradient-to-br from-secondary/20 to-secondary/5 rounded-xl sm:rounded-2xl flex items-center justify-center overflow-hidden">
                   <img 
-                    src="/lovable-uploads/01e636d7-7ca8-47cf-a97f-47b4d0390a04.png" 
+                    src="/lovable-uploads/bb7abda3-e754-4615-9024-79356f09a9fd.png" 
                     alt="LOJA DO BORRACHEIRO - Mascote profissional" 
                     className="w-full h-full object-contain scale-110"
                   />
