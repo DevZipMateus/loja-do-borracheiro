@@ -2,10 +2,12 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone, Mail, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,9 +25,13 @@ const Header = () => {
     }
   };
 
+  const handleCatalogClick = () => {
+    navigate('/catalogo');
+    setIsMenuOpen(false);
+  };
+
   return (
     <>
-
       {/* Header principal */}
       <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled ? 'bg-background/95 backdrop-blur-md shadow-soft' : 'bg-transparent'
@@ -37,7 +43,8 @@ const Header = () => {
               <img 
                 src="/lovable-uploads/bb7abda3-e754-4615-9024-79356f09a9fd.png" 
                 alt="LOJA DO BORRACHEIRO RS Logo" 
-                className="h-10 sm:h-12 w-auto"
+                className="h-10 sm:h-12 w-auto cursor-pointer"
+                onClick={() => navigate('/')}
               />
             </div>
 
@@ -60,6 +67,12 @@ const Header = () => {
                 className="text-foreground hover:text-primary transition-colors font-medium"
               >
                 Serviços
+              </button>
+              <button 
+                onClick={handleCatalogClick}
+                className="text-foreground hover:text-primary transition-colors font-medium"
+              >
+                Catálogo
               </button>
               <button 
                 onClick={() => scrollToSection('localizacao')}
@@ -118,6 +131,12 @@ const Header = () => {
                   className="text-left text-foreground hover:text-primary hover:bg-primary/5 transition-colors font-medium py-3 px-2 rounded-md"
                 >
                   Serviços
+                </button>
+                <button 
+                  onClick={handleCatalogClick}
+                  className="text-left text-foreground hover:text-primary hover:bg-primary/5 transition-colors font-medium py-3 px-2 rounded-md"
+                >
+                  Catálogo
                 </button>
                 <button 
                   onClick={() => scrollToSection('localizacao')}
