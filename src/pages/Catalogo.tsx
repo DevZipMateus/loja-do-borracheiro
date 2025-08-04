@@ -1,4 +1,5 @@
 
+
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -148,7 +149,7 @@ const products = [
   },
   {
     id: 29,
-    name: "Borrachinha para Bico Duplo Modelo FVA",
+    name: "Borrachinha para Bico Duplo Modelo",
     image: "/lovable-uploads/galeria/BORRACHINHA PARA BICO DUPLO MODELO FVA.png"
   },
   {
@@ -430,51 +431,6 @@ const products = [
     id: 85,
     name: "Câmara de Ar Flexen TR 15 - FR 15",
     image: "/lovable-uploads/galeria/CAMARA DE AR FLEXEN TR 15 - FR 15 -.png"
-  },
-  {
-    id: 86,
-    name: "Câmara de Ar FVA 1.000 x 16",
-    image: "/lovable-uploads/galeria/CAMARA DE AR FVA 1.000 X 16.png"
-  },
-  {
-    id: 87,
-    name: "Câmara de Ar FVA 16.9.18.4 x 26 - TR 218",
-    image: "/lovable-uploads/galeria/CAMARA DE AR FVA 16.9.18.4 X 26 - TR 218.png"
-  },
-  {
-    id: 88,
-    name: "Câmara de Ar FVA 17.5 x 25 - TR 220",
-    image: "/lovable-uploads/galeria/CAMARA DE AR FVA 17.5 X 25 - TR 220.png"
-  },
-  {
-    id: 89,
-    name: "Câmara de Ar FVA 6.50-16",
-    image: "/lovable-uploads/galeria/CAMARA DE AR FVA 6 50-16.png"
-  },
-  {
-    id: 90,
-    name: "Câmara de Ar FVA 7.50-16 TR 15",
-    image: "/lovable-uploads/galeria/CAMARA DE AR FVA 7.50-16 TR 15.png"
-  },
-  {
-    id: 91,
-    name: "Câmara de Ar FVA 750 x 16 - SC 95",
-    image: "/lovable-uploads/galeria/CAMARA DE AR FVA 750X16 - SC 95.png"
-  },
-  {
-    id: 92,
-    name: "Câmara de Ar FVA Aro 13 x 14 - TR 13",
-    image: "/lovable-uploads/galeria/CAMARA DE AR FVA ARO 13x14 - TR 13 -.png"
-  },
-  {
-    id: 93,
-    name: "Câmara de Ar FVA Aro 15 - TR 13",
-    image: "/lovable-uploads/galeria/CAMARA DE AR FVA ARO 15 - TR 13 -.png"
-  },
-  {
-    id: 94,
-    name: "Câmara de Ar FVA FR 15 TR 15",
-    image: "/lovable-uploads/galeria/CAMARA DE AR FVA FR 15 TR 15.png"
   },
   {
     id: 95,
@@ -880,3 +836,4 @@ const Catalogo = () => {
 };
 
 export default Catalogo;
+
