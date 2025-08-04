@@ -1,4 +1,3 @@
-
 import { Phone, Mail, MapPin, Facebook, Instagram, Heart } from "lucide-react";
 
 const Footer = () => {
@@ -132,11 +131,15 @@ const Footer = () => {
             <div className="space-y-2 text-secondary-foreground/80">
               <div className="flex justify-between">
                 <span>Segunda - Sexta:</span>
-                <span>8h às 18h</span>
+                <span>7h30 às 12h</span>
+              </div>
+              <div className="flex justify-between">
+                <span></span>
+                <span>13h30 às 17h</span>
               </div>
               <div className="flex justify-between">
                 <span>Sábado:</span>
-                <span>8h às 12h</span>
+                <span>Fechado</span>
               </div>
               <div className="flex justify-between">
                 <span>Domingo:</span>
