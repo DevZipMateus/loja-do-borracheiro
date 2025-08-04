@@ -2,12 +2,13 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone, Mail, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,15 +19,33 @@ const Header = () => {
   }, []);
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsMenuOpen(false);
+    // Se não estamos na página inicial, navegar primeiro para a página inicial
+    if (location.pathname !== '/') {
+      navigate('/');
+      // Aguardar um pouco para a página carregar antes de fazer o scroll
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      // Se já estamos na página inicial, fazer scroll diretamente
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
+    setIsMenuOpen(false);
   };
 
   const handleCatalogClick = () => {
     navigate('/catalogo');
+    setIsMenuOpen(false);
+  };
+
+  const handleHomeClick = () => {
+    navigate('/');
     setIsMenuOpen(false);
   };
 
@@ -44,7 +63,7 @@ const Header = () => {
                 src="/lovable-uploads/bb7abda3-e754-4615-9024-79356f09a9fd.png" 
                 alt="LOJA DO BORRACHEIRO RS Logo" 
                 className="h-10 sm:h-12 w-auto cursor-pointer"
-                onClick={() => navigate('/')}
+                onClick={handleHomeClick}
               />
             </div>
 
