@@ -1,5 +1,3 @@
-
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -775,6 +773,12 @@ const products = [
 ];
 
 const Catalogo = () => {
+  const handleWhatsAppClick = (productName: string) => {
+    const message = `Olá! Vim do catálogo da LOJA DO BORRACHEIRO RS e gostaria de consultar o preço do produto: ${productName}`;
+    const whatsappUrl = `https://wa.me/5551995048546?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -816,6 +820,7 @@ const Catalogo = () => {
                     </h3>
                     
                     <Button 
+                      onClick={() => handleWhatsAppClick(product.name)}
                       className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
                       size="sm"
                     >
@@ -836,4 +841,3 @@ const Catalogo = () => {
 };
 
 export default Catalogo;
-
