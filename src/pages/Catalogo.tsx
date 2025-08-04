@@ -240,6 +240,581 @@ const products = [
     id: 47,
     name: "Câmara de Ar 700 x 12 - Flexen",
     image: "/lovable-uploads/galeria/CAMARA DE AR 700 X 12- FLEXEN.png"
+  },
+  {
+    id: 48,
+    name: "Câmara de Ar Canello 2.50 x 17 - TR 4 CMH 17",
+    image: "/lovable-uploads/galeria/CAMARA DE AR CANELLO 2.50 X 17 - TR 4 CMH 17.png"
+  },
+  {
+    id: 49,
+    name: "Câmara de Ar Canello 20 Bici - CE 20 - TR 1",
+    image: "/lovable-uploads/galeria/CAMARA DE AR CANELLO 20 BICI  - CE 20 - TR 1.png"
+  },
+  {
+    id: 50,
+    name: "Câmara de Ar Canello 250 x 16 - CMH 16 - TR 4",
+    image: "/lovable-uploads/galeria/CAMARA DE AR CANELLO 250 X 16 - CMH 16 - TR 4.png"
+  },
+  {
+    id: 51,
+    name: "Câmara de Ar Canello 3.25 x 8 - CIA 8 - TR 1",
+    image: "/lovable-uploads/galeria/CAMARA DE AR CANELLO 3.25 X 8 - CIA 8 - TR 1.png"
+  },
+  {
+    id: 52,
+    name: "Câmara de Ar Canello 3.50 - 8",
+    image: "/lovable-uploads/galeria/CAMARA DE AR CANELLO 3.50 - 8.png"
+  },
+  {
+    id: 53,
+    name: "Câmara de Ar Canello 300 x 14 - CMA 14 - TR 4",
+    image: "/lovable-uploads/galeria/CAMARA DE AR CANELLO 300 X 14 - CMA 14 - TR 4.png"
+  },
+  {
+    id: 54,
+    name: "Câmara de Ar Canello 300 x 21 - CMA 21 - TR 4",
+    image: "/lovable-uploads/galeria/CAMARA DE AR CANELLO 300 X 21 - CMA 21 - TR 4.png"
+  },
+  {
+    id: 55,
+    name: "Câmara de Ar Canello 300 x 21- CMA 21 R - Trilha - TR 4",
+    image: "/lovable-uploads/galeria/CAMARA DE AR CANELLO 300 X 21- CMA 21 R - TRILHA - TR 4.png"
+  },
+  {
+    id: 56,
+    name: "Câmara de Ar Canello 400 x 18 - CMB 18 R - Trilha - TR 4",
+    image: "/lovable-uploads/galeria/CAMARA DE AR CANELLO 400 X 18 - CMB 18 R - TRILHA - TR 4.png"
+  },
+  {
+    id: 57,
+    name: "Câmara de Ar Canello 90.90 x 18 CMA 18",
+    image: "/lovable-uploads/galeria/CAMARA DE AR CANELLO 90.90 X 18 CMA 18.png"
+  },
+  {
+    id: 58,
+    name: "Câmara de Ar Canello 90.90 x 19 CMA 19",
+    image: "/lovable-uploads/galeria/CAMARA DE AR CANELLO 90.90 X 19 CMA 19.png"
+  },
+  {
+    id: 59,
+    name: "Câmara de Ar Canello Bicicleta 26 CE 26",
+    image: "/lovable-uploads/galeria/CAMARA DE AR CANELLO BICICLETA 26 CE 26.png"
+  },
+  {
+    id: 60,
+    name: "Câmara de Ar Canello Bicicleta Aro 16 - CE 16 - TR 1",
+    image: "/lovable-uploads/galeria/CAMARA DE AR CANELLO BICICLETA ARO 16 - CE 16 - TR 1.png"
+  },
+  {
+    id: 61,
+    name: "Câmara de Ar Canello Bicicleta Aro 24 - CE 24 - TR 1",
+    image: "/lovable-uploads/galeria/CAMARA DE AR CANELLO BICICLETA ARO 24 - CE 24 - TR 1.png"
+  },
+  {
+    id: 62,
+    name: "Câmara de Ar Canello Bicicleta Aro 29 - CE 29",
+    image: "/lovable-uploads/galeria/CAMARA DE AR CANELLO BICICLETA ARO 29 - CE 29.png"
+  },
+  {
+    id: 63,
+    name: "Câmara de Ar Canello CMB 18 Larga",
+    image: "/lovable-uploads/galeria/CAMARA DE AR CANELLO CMB 18 LARGA.png"
+  },
+  {
+    id: 64,
+    name: "Câmara de Ar Canello CMC 460 x 17 Larga",
+    image: "/lovable-uploads/galeria/CAMARA DE AR CANELLO CMC 460 X 17 LARGA.png"
+  },
+  {
+    id: 65,
+    name: "Câmara de Ar Cargo 18",
+    image: "/lovable-uploads/galeria/CAMARA DE AR CARGO 18.png"
+  },
+  {
+    id: 66,
+    name: "Câmara de Ar Cargo 2.50 - 17",
+    image: "/lovable-uploads/galeria/CAMARA DE AR CARGO 2.50 - 17.png"
+  },
+  {
+    id: 67,
+    name: "Câmara de Ar Cargo 2.50 x 4",
+    image: "/lovable-uploads/galeria/CAMARA DE AR CARGO 2.50 X 4 -.png"
+  },
+  {
+    id: 68,
+    name: "Câmara de Ar Cargo 3.25-8",
+    image: "/lovable-uploads/galeria/CAMARA DE AR CARGO 3.25-8.png"
+  },
+  {
+    id: 69,
+    name: "Câmara de Ar Cargo 3.50 - 4",
+    image: "/lovable-uploads/galeria/CAMARA DE AR CARGO 3.50 - 4.png"
+  },
+  {
+    id: 70,
+    name: "Câmara de Ar Cargo 3.50 - 8",
+    image: "/lovable-uploads/galeria/CAMARA DE AR CARGO 3.50 - 8.png"
+  },
+  {
+    id: 71,
+    name: "Câmara de Ar Cargo 4.80 4 e 4.00 x 8",
+    image: "/lovable-uploads/galeria/CAMARA DE AR CARGO 4.804 E 4.00X8.png"
+  },
+  {
+    id: 72,
+    name: "Câmara de Ar Flexen 11.4 - 24 12.4 - 24",
+    image: "/lovable-uploads/galeria/CAMARA DE AR FLEXEN 11. 4 - 24  12. 4 - 24.png"
+  },
+  {
+    id: 73,
+    name: "Câmara de Ar Flexen 1100 x 22",
+    image: "/lovable-uploads/galeria/CAMARA DE AR FLEXEN 1100X22.png"
+  },
+  {
+    id: 74,
+    name: "Câmara de Ar Flexen 13 x 14 TR 13",
+    image: "/lovable-uploads/galeria/CAMARA DE AR FLEXEN 13x14 TR 13.png"
+  },
+  {
+    id: 75,
+    name: "Câmara de Ar Flexen 28.9 x 15.8 25 x 15 - TR 75 - 508200FX",
+    image: "/lovable-uploads/galeria/CAMARA DE AR FLEXEN 28.9 X 15.825 X 15 - TR 75 - 508200FX.png"
+  },
+  {
+    id: 76,
+    name: "Câmara de Ar Flexen 6.00 - 9 JS2",
+    image: "/lovable-uploads/galeria/CAMARA DE AR FLEXEN 6.00 - 9 JS2.png"
+  },
+  {
+    id: 77,
+    name: "Câmara de Ar Flexen 6.50-10",
+    image: "/lovable-uploads/galeria/CAMARA DE AR FLEXEN 6.50-10.png"
+  },
+  {
+    id: 78,
+    name: "Câmara de Ar Flexen 650 x 16 - KR 16 - TR 15",
+    image: "/lovable-uploads/galeria/CAMARA DE AR FLEXEN 650 X 16 - KR 16 - TR 15.png"
+  },
+  {
+    id: 79,
+    name: "Câmara de Ar Flexen 7.50 - 16 TR 15",
+    image: "/lovable-uploads/galeria/CAMARA DE AR FLEXEN 7.50 - 16 TR 15.png"
+  },
+  {
+    id: 80,
+    name: "Câmara de Ar Flexen 7.50 - 16 TR 75A",
+    image: "/lovable-uploads/galeria/CAMARA DE AR FLEXEN 7.50 - 16 TR 75A.png"
+  },
+  {
+    id: 81,
+    name: "Câmara de Ar Flexen 900 x 16 Agrícola",
+    image: "/lovable-uploads/galeria/CAMARA DE AR FLEXEN 900x16 AGRICOLA.png"
+  },
+  {
+    id: 82,
+    name: "Câmara de Ar Flexen 900 x 20",
+    image: "/lovable-uploads/galeria/CAMARA DE AR FLEXEN 900x20.png"
+  },
+  {
+    id: 83,
+    name: "Câmara de Ar Flexen FR 15 TR 13",
+    image: "/lovable-uploads/galeria/CAMARA DE AR FLEXEN FR 15 TR 13.png"
+  },
+  {
+    id: 84,
+    name: "Câmara de Ar Flexen IND 7.50 - 15",
+    image: "/lovable-uploads/galeria/CAMARA DE AR FLEXEN IND 7. 50 - 15.png"
+  },
+  {
+    id: 85,
+    name: "Câmara de Ar Flexen TR 15 - FR 15",
+    image: "/lovable-uploads/galeria/CAMARA DE AR FLEXEN TR 15 - FR 15 -.png"
+  },
+  {
+    id: 86,
+    name: "Câmara de Ar FVA 1.000 x 16",
+    image: "/lovable-uploads/galeria/CAMARA DE AR FVA 1.000 X 16.png"
+  },
+  {
+    id: 87,
+    name: "Câmara de Ar FVA 16.9.18.4 x 26 - TR 218",
+    image: "/lovable-uploads/galeria/CAMARA DE AR FVA 16.9.18.4 X 26 - TR 218.png"
+  },
+  {
+    id: 88,
+    name: "Câmara de Ar FVA 17.5 x 25 - TR 220",
+    image: "/lovable-uploads/galeria/CAMARA DE AR FVA 17.5 X 25 - TR 220.png"
+  },
+  {
+    id: 89,
+    name: "Câmara de Ar FVA 6.50-16",
+    image: "/lovable-uploads/galeria/CAMARA DE AR FVA 6 50-16.png"
+  },
+  {
+    id: 90,
+    name: "Câmara de Ar FVA 7.50-16 TR 15",
+    image: "/lovable-uploads/galeria/CAMARA DE AR FVA 7.50-16 TR 15.png"
+  },
+  {
+    id: 91,
+    name: "Câmara de Ar FVA 750 x 16 - SC 95",
+    image: "/lovable-uploads/galeria/CAMARA DE AR FVA 750X16 - SC 95.png"
+  },
+  {
+    id: 92,
+    name: "Câmara de Ar FVA Aro 13 x 14 - TR 13",
+    image: "/lovable-uploads/galeria/CAMARA DE AR FVA ARO 13x14 - TR 13 -.png"
+  },
+  {
+    id: 93,
+    name: "Câmara de Ar FVA Aro 15 - TR 13",
+    image: "/lovable-uploads/galeria/CAMARA DE AR FVA ARO 15 - TR 13 -.png"
+  },
+  {
+    id: 94,
+    name: "Câmara de Ar FVA FR 15 TR 15",
+    image: "/lovable-uploads/galeria/CAMARA DE AR FVA FR 15 TR 15.png"
+  },
+  {
+    id: 95,
+    name: "Câmara de Ar Maggion 4.50 21",
+    image: "/lovable-uploads/galeria/CAMARA DE AR MAGGION 4.50 21"
+  },
+  {
+    id: 96,
+    name: "Câmara de Ar Maggion 400 x 15 - TR 15",
+    image: "/lovable-uploads/galeria/CAMARA DE AR MAGGION 400 X 15 - TR 15_.png"
+  },
+  {
+    id: 97,
+    name: "Câmara de Ar Maggion 500/6-12",
+    image: "/lovable-uploads/galeria/CAMARA DE AR MAGGION 500_6-12.png"
+  },
+  {
+    id: 98,
+    name: "Câmara de Ar Pirelli IM PE - 26",
+    image: "/lovable-uploads/galeria/CAMARA DE AR PIRELLI IM PE - 26.png"
+  },
+  {
+    id: 99,
+    name: "Câmara de Ar Pirelli PE-20 Válv Americana 32mm",
+    image: "/lovable-uploads/galeria/CAMARA DE AR PIRELLI PE-20 VALV AMERICANA 32MM.png"
+  },
+  {
+    id: 100,
+    name: "Câmara de Ar Q Bom 1.200 x 24 - TC 131",
+    image: "/lovable-uploads/galeria/CAMARA DE AR Q BOM 1.200 X 24 - TC 131.png"
+  },
+  {
+    id: 101,
+    name: "Câmara de Ar Q Bom 1000 x 20 - TC 131",
+    image: "/lovable-uploads/galeria/CAMARA DE AR Q BOM 1000 X 20 - TC 131 (1).png"
+  },
+  {
+    id: 102,
+    name: "Câmara de Ar Q Bom 18 x 8.50-8 - TR 13",
+    image: "/lovable-uploads/galeria/CAMARA DE AR Q BOM 18 X 8.50-8 - TR 13.png"
+  },
+  {
+    id: 103,
+    name: "Câmara de Ar Q Bom 6.50 - 10",
+    image: "/lovable-uploads/galeria/CAMARA DE AR Q BOM 6. 50 - 10.png"
+  },
+  {
+    id: 104,
+    name: "Câmara de Ar Q Bom 7.50_16 SC 95",
+    image: "/lovable-uploads/galeria/CAMARA DE AR Q BOM 7.50_16 SC 95_.png"
+  },
+  {
+    id: 105,
+    name: "Câmara de Ar Q Bom 7.50_16 TR 15",
+    image: "/lovable-uploads/galeria/CAMARA DE AR Q BOM 7.50_16 TR 15.png"
+  },
+  {
+    id: 106,
+    name: "Câmara de Ar Q Bom 750 - 16 TR 460",
+    image: "/lovable-uploads/galeria/CAMARA DE AR Q BOM 750 - 16 TR 460.png"
+  },
+  {
+    id: 107,
+    name: "Câmara de Ar Q Bom 900 x 20 - TC 131",
+    image: "/lovable-uploads/galeria/CAMARA DE AR Q BOM 900 X 20 - TC 131 -.png"
+  },
+  {
+    id: 108,
+    name: "Câmara de Ar Q Bom LTQ 1214",
+    image: "/lovable-uploads/galeria/CAMARA DE AR Q BOM LTQ 1214_.png"
+  },
+  {
+    id: 109,
+    name: "Câmara de Ar Q Bom LTQ 1215 - TR 13",
+    image: "/lovable-uploads/galeria/CAMARA DE AR Q BOM LTQ 1215 - TR 13 -.png"
+  },
+  {
+    id: 110,
+    name: "Câmara de Ar Q Bom LTQ 1216 - TR 13",
+    image: "/lovable-uploads/galeria/CAMARA DE AR Q BOM LTQ 1216 - TR 13.png"
+  },
+  {
+    id: 111,
+    name: "Câmara de Ar Q Bom LTQ 1415 - TR 13",
+    image: "/lovable-uploads/galeria/CAMARA DE AR Q BOM LTQ 1415 - TR 13.png"
+  },
+  {
+    id: 112,
+    name: "Câmara de Ar QBom 1.100 x 22 - TC 131",
+    image: "/lovable-uploads/galeria/CAMARA DE AR QBOM 1.100 X 22 - TC 131 -.png"
+  },
+  {
+    id: 113,
+    name: "Câmara de Ar QBom 295_80-22,5 TR 462",
+    image: "/lovable-uploads/galeria/CAMARA DE AR QBOM 295_80-22,5 TR 462.png"
+  },
+  {
+    id: 114,
+    name: "Câmara de Ar QBom 400_500 x 8 AQ - TR 13",
+    image: "/lovable-uploads/galeria/CAMARA DE AR QBOM 400_500 X 8 AQ - TR 13.png"
+  },
+  {
+    id: 115,
+    name: "Câmara de Ar QBom GR 13_14 TR13",
+    image: "/lovable-uploads/galeria/CAMARA DE AR QBOM GR 13_14 TR13.png"
+  },
+  {
+    id: 116,
+    name: "Câmara de Ar Rotta FR 13 x 14",
+    image: "/lovable-uploads/galeria/CAMARA DE AR ROTTA FR 13x14.png"
+  },
+  {
+    id: 117,
+    name: "Câmara de Ar Tortuga 1.000 x 16 - TR 15 - AG 1916",
+    image: "/lovable-uploads/galeria/CAMARA DE AR TORTUGA 1.000 X 16 - TR 15 - AG 1916 (1).png"
+  },
+  {
+    id: 118,
+    name: "Câmara de Ar Tortuga 1.000 x 20 - TC 131",
+    image: "/lovable-uploads/galeria/CAMARA DE AR TORTUGA 1.000 X 20 - TC 131 -.png"
+  },
+  {
+    id: 119,
+    name: "Câmara de Ar Tortuga 10.5_80 x 18 - TR 15 - AG 1718 - TORT",
+    image: "/lovable-uploads/galeria/CAMARA DE AR TORTUGA 10.5_80 X 18 - TR 15 - AG 1718 - TORT.png"
+  },
+  {
+    id: 120,
+    name: "Câmara de Ar Tortuga 12.5_80 x 18 - TR 15 - AG 2018",
+    image: "/lovable-uploads/galeria/CAMARA DE AR TORTUGA 12.5_80 X 18 - TR 15 - AG 2018.png"
+  },
+  {
+    id: 121,
+    name: "Câmara de Ar Tortuga 14,00x24 1400x25 FE 2525",
+    image: "/lovable-uploads/galeria/CAMARA DE AR TORTUGA 14,00X24 1400X25 FE 2525.png"
+  },
+  {
+    id: 122,
+    name: "Câmara de Ar Tortuga 14.9 x 26_28 - TR 218 - AG 2428",
+    image: "/lovable-uploads/galeria/CAMARA DE AR TORTUGA 14.9 X 26_28 - TR 218 - AG 2428.png"
+  },
+  {
+    id: 123,
+    name: "Câmara de Ar Tortuga 16, 9 x 28 TR 218 - AG 2730",
+    image: "/lovable-uploads/galeria/CAMARA DE AR TORTUGA 16, 9 X 28 TR 218 - AG 2730.png"
+  },
+  {
+    id: 124,
+    name: "Câmara de Ar Tortuga 16.9 x 24 - TR 218 - AG 2824",
+    image: "/lovable-uploads/galeria/CAMARA DE AR TORTUGA 16.9 X 24 - TR 218 - AG 2824 -.png"
+  },
+  {
+    id: 125,
+    name: "Câmara de Ar Tortuga 16.9_18.4 x 26 - TR 21 - AG 3026",
+    image: "/lovable-uploads/galeria/CAMARA DE AR TORTUGA 16.9_18.4 X 26 - TR 21 - AG 3026 .png"
+  },
+  {
+    id: 126,
+    name: "Câmara de Ar Tortuga 17.5 x 25 - TR 220 - FE 2725",
+    image: "/lovable-uploads/galeria/CAMARA DE AR TORTUGA 17.5 X 25 - TR 220 - FE 2725 -.png"
+  },
+  {
+    id: 127,
+    name: "Câmara de Ar Tortuga 18.4 x 30 - TR 218 - AG 3030",
+    image: "/lovable-uploads/galeria/CAMARA DE AR TORTUGA 18.4 X 30 - TR 218 - AG 3030 -.png"
+  },
+  {
+    id: 128,
+    name: "Câmara de Ar Tortuga 18.4 x 34 - TR 218 - AG 3034",
+    image: "/lovable-uploads/galeria/CAMARA DE AR TORTUGA 18.4 X 34 - TR 218 - AG 3034 -.png"
+  },
+  {
+    id: 129,
+    name: "Câmara de Ar Tortuga 400-15 TR 15",
+    image: "/lovable-uploads/galeria/CAMARA DE AR TORTUGA 400-15 TR 15.png"
+  },
+  {
+    id: 130,
+    name: "Câmara de Ar Tortuga 500_6 x 12 - TR 15 AG 1012",
+    image: "/lovable-uploads/galeria/CAMARA DE AR TORTUGA 500_6 X 12 - TR 15 AG 1012 -.png"
+  },
+  {
+    id: 131,
+    name: "Câmara de Ar Tortuga 700 x 18 - TR 218 - AG 1218",
+    image: "/lovable-uploads/galeria/CAMARA DE AR TORTUGA 700 X 18 - TR 218 - AG 1218.png"
+  },
+  {
+    id: 132,
+    name: "Câmara de Ar Tortuga 750 x 16 - TR 15 - AG 1416",
+    image: "/lovable-uploads/galeria/CAMARA DE AR TORTUGA 750 X 16 - TR 15 - AG 1416 -.png"
+  },
+  {
+    id: 133,
+    name: "Câmara de Ar Tortuga 750 x 16 - TR 460 CL 1416",
+    image: "/lovable-uploads/galeria/CAMARA DE AR TORTUGA 750 X 16 - TR 460 CL 1416 -.png"
+  },
+  {
+    id: 134,
+    name: "Câmara de Ar Tortuga 750 x 18 - TR 218 - AG 1418",
+    image: "/lovable-uploads/galeria/CAMARA DE AR TORTUGA 750 X 18 - TR 218 - AG 1418 -.png"
+  },
+  {
+    id: 135,
+    name: "Câmara de Ar Tortuga 8.3-8 x 24 - TR 218 - AG 1624",
+    image: "/lovable-uploads/galeria/CAMARA DE AR TORTUGA 8.3-8 X 24 - TR 218 - AG 1624 -.png"
+  },
+  {
+    id: 136,
+    name: "Câmara de Ar Tortuga 900 x 16 - TR 15 - AG 1616",
+    image: "/lovable-uploads/galeria/CAMARA DE AR TORTUGA 900 X 16 - TR 15 - AG 1616 -.png"
+  },
+  {
+    id: 137,
+    name: "Câmara de Ar Tortuga KR 16 - TR 15 - 6.50-16 AG 1216",
+    image: "/lovable-uploads/galeria/CAMARA DE AR TORTUGA KR 16 - TR 15 - 6 .50 -16   AG 1216 -.png"
+  },
+  {
+    id: 138,
+    name: "Câmara de Ar Vulcan Bor ( 90.90 - 19 ) VJ 19",
+    image: "/lovable-uploads/galeria/CAMARA DE AR VULCAN BOR ( 90.90 - 19 ) VJ 19.png"
+  },
+  {
+    id: 139,
+    name: "Câmara de Ar Vulcan Bor (90.100 - 14 110.80) - 14 VJ 14 L",
+    image: "/lovable-uploads/galeria/CAMARA DE AR VULCAN BOR (90.100 - 14  110.80) - 14 VJ 14 L.png"
+  },
+  {
+    id: 140,
+    name: "Câmara de Ar Vulcan Bor 1314 TR 13",
+    image: "/lovable-uploads/galeria/CAMARA DE AR VULCAN BOR 1314 TR 13.png"
+  },
+  {
+    id: 141,
+    name: "Câmara de Ar Vulcan Bor 14 VJ - 14",
+    image: "/lovable-uploads/galeria/CAMARA DE AR VULCAN BOR 14 VJ - 14.png"
+  },
+  {
+    id: 142,
+    name: "Câmara de Ar Vulcan Bor 16 ( 2.50 - 16 - 275x16 ) VG - 16",
+    image: "/lovable-uploads/galeria/CAMARA DE AR VULCAN BOR 16 ( 2.50 - 16 - 275X16 ) VG - 16.png"
+  },
+  {
+    id: 143,
+    name: "Câmara de Ar Vulcan Bor 16 ( 300x16 - 80 x 100 - 16 ) VJ - 16",
+    image: "/lovable-uploads/galeria/CAMARA DE AR VULCAN BOR 16 ( 300X16 - 80 X 100 - 16 ) VJ - 16.png"
+  },
+  {
+    id: 144,
+    name: "Câmara de Ar Vulcan Bor 17 ( 2.50 - 17 ) VG - 17",
+    image: "/lovable-uploads/galeria/CAMARA DE AR VULCAN BOR 17 ( 2.50 - 17 ) VG - 17.png"
+  },
+  {
+    id: 145,
+    name: "Câmara de Ar Vulcan Bor 17 ( 4.10 - 17 ) VJ - 17",
+    image: "/lovable-uploads/galeria/CAMARA DE AR VULCAN BOR 17 ( 4.10 - 17 ) VJ - 17.png"
+  },
+  {
+    id: 146,
+    name: "Câmara de Ar Vulcan Bor 3.50 - 10 VG - 10 TR - 87",
+    image: "/lovable-uploads/galeria/CAMARA DE AR VULCAN BOR 3.50 - 10 VG - 10 TR - 87.png"
+  },
+  {
+    id: 147,
+    name: "Câmara de Ar Vulcan Bor 3.50 - 8 VJ 8",
+    image: "/lovable-uploads/galeria/CAMARA DE AR VULCAN BOR 3.50 - 8 VJ 8.png"
+  },
+  {
+    id: 148,
+    name: "Câmara de Ar Vulcan Bor 90.90 - 18 ( 3.00 - 18 ) VG 18",
+    image: "/lovable-uploads/galeria/CAMARA DE AR VULCAN BOR 90.90 - 18 ( 3.00 - 18 ) VG 18.png"
+  },
+  {
+    id: 149,
+    name: "Câmara de Ar Vulcan Bor 90.90 - 21 VG 21",
+    image: "/lovable-uploads/galeria/CAMARA DE AR VULCAN BOR 90.90 - 21 VG 21.png"
+  },
+  {
+    id: 150,
+    name: "Câmara de Ar Vulcan Bor Trator Agrícola Aro 16 - LTR 16 TR 13",
+    image: "/lovable-uploads/galeria/CAMARA DE AR VULCAN BOR TRATOR AGRICOLA ARO 16 - LTR 16 TR 13.png"
+  },
+  {
+    id: 151,
+    name: "Câmara de Ar Vulcan Bor VJ 18",
+    image: "/lovable-uploads/galeria/CAMARA DE AR VULCAN BOR VJ 18.png"
+  },
+  {
+    id: 152,
+    name: "Câmara de Ar XBri (ID) 5 00-8 TR 244",
+    image: "/lovable-uploads/galeria/CAMARA DE AR XBRI (ID) 5 00-8 TR 244.png"
+  },
+  {
+    id: 153,
+    name: "Câmara de Ar XBri (ID) 7 50 16 TR 15",
+    image: "/lovable-uploads/galeria/CAMARA DE AR XBRI (ID) 7 50 16 TR 15.png"
+  },
+  {
+    id: 154,
+    name: "Câmara de Ar XBri (ID) KR 15 TR 13",
+    image: "/lovable-uploads/galeria/CAMARA DE AR XBRI (ID) KR 15 TR 13.png"
+  },
+  {
+    id: 155,
+    name: "Câmara de Ar XBri 295.80 R 22,5",
+    image: "/lovable-uploads/galeria/CAMARA DE AR XBRI 295.80 R 22,5.png"
+  },
+  {
+    id: 156,
+    name: "Câmara Q Bom GR15 TR15",
+    image: "/lovable-uploads/galeria/CAMARA Q BOM GR15 TR15.png"
+  },
+  {
+    id: 157,
+    name: "Carbide 009 G36",
+    image: "/lovable-uploads/galeria/CARBIDE 009 G36.png"
+  },
+  {
+    id: 158,
+    name: "Carbide ATC N 024 G 16",
+    image: "/lovable-uploads/galeria/CARBIDE ATC N 024 G 16.png"
+  },
+  {
+    id: 159,
+    name: "Carbide ATC N 024 G 36",
+    image: "/lovable-uploads/galeria/CARBIDE ATC N 024 G 36.png"
+  },
+  {
+    id: 160,
+    name: "Chave de Impacto Industrial P Autos 1.2 C. Kit de Soquetes - Torque 680NM Pneumática Bremen",
+    image: "/lovable-uploads/galeria/CHAVE DE IMPACTO INDUSTRIAL P AUTOS 1.2_ C. KIT DE SOQUETES - TORQUE 680NM pneumatica BREMEN.png"
+  },
+  {
+    id: 161,
+    name: "XBri 1000.20",
+    image: "/lovable-uploads/galeria/XBRI 1000.20.png"
+  },
+  {
+    id: 162,
+    name: "Abraçadeira",
+    image: "/lovable-uploads/galeria/abraçadeira.jpg"
   }
 ];
 
