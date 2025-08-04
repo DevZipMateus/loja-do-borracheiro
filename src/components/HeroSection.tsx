@@ -1,4 +1,3 @@
-
 import { ArrowRight, Star, Users, Clock, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -91,12 +90,12 @@ const HeroSection = () => {
           <div className="relative animate-fade-in order-first lg:order-last">
             <div className="relative max-w-md mx-auto lg:max-w-none">
               {/* Main image container */}
-              <div className="bg-secondary/10 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 shadow-strong">
-                <div className="aspect-square bg-gradient-to-br from-secondary/20 to-secondary/5 rounded-xl sm:rounded-2xl flex items-center justify-center overflow-hidden">
+              <div className="bg-secondary/10 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10 shadow-strong">
+                <div className="aspect-square bg-gradient-to-br from-secondary/20 to-secondary/5 rounded-xl sm:rounded-2xl flex items-center justify-center p-4">
                   <img 
                     src="/lovable-uploads/bb7abda3-e754-4615-9024-79356f09a9fd.png" 
                     alt="LOJA DO BORRACHEIRO - Mascote profissional" 
-                    className="w-full h-full object-contain scale-110"
+                    className="w-full h-full object-contain"
                   />
                 </div>
               </div>
