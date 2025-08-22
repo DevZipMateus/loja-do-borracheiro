@@ -110,7 +110,7 @@ const AboutSection = () => {
             <div className="bg-primary/5 rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 shadow-soft max-w-md mx-auto lg:max-w-none">
               <div className="aspect-square bg-gradient-to-br from-primary/10 to-primary/5 rounded-xl sm:rounded-2xl flex items-center justify-center">
                 <img 
-                  src="/lovable-uploads/01e636d7-7ca8-47cf-a97f-47b4d0390a04.png" 
+                  src="/lovable-uploads/0cffab01-2fa8-4cf5-97f2-8f27783a01da.png" 
                   alt="LOJA DO BORRACHEIRO RS - Nossa história" 
                   className="w-3/4 h-3/4 object-contain"
                 />
