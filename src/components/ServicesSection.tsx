@@ -9,7 +9,7 @@ const ServicesSection = () => {
       title: "Produtos para Borracharia",
       description: "Ampla linha de produtos especializados para borracharias e oficinas automotivas",
       features: [
-        "Abraçadeiras e borrachas de escapamento",
+        
         "Câmaras de ar de diversas medidas", 
         "Acessórios para reparos",
         "Ferramentas especializadas"
