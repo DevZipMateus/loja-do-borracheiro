@@ -378,7 +378,7 @@ const products = [
   {
     id: 75,
     name: "Câmara de Ar Flexen 28.9 x 15.8 25 x 15 - TR 75 - 508200FX",
-    image/ lovabled-uploads/galeria/CAMARA DE AR FLEXEN 28.9 X 15.825 X 15 - TR 75 - 508200FX.png"
+    image: "/lovable-uploads/galeria/CAMARA DE AR FLEXEN 28.9 X 15.825 X 15 - TR 75 - 508200FX.png"
   },
   {
     id: 76,
@@ -764,6 +764,11 @@ const products = [
     id: 161,
     name: "XBri 1000.20",
     image: "/lovable-uploads/galeria/XBRI 1000.20.png"
+  },
+  {
+    id: 162,
+    name: "Abraçadeira",
+    image: "/lovable-uploads/galeria/abraçadeira.jpg"
   }
 ];
 
