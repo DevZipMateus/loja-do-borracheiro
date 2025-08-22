@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -39,7 +40,7 @@ const WhatsAppButton = () => {
                 />
               </div>
               <div>
-                <h4 className="font-semibold text-card-foreground text-xs sm:text-sm">LOJA DO BORRACHEIRO</h4>
+                <h4 className="font-semibold text-card-foreground text-xs sm:text-sm">LOJA DO BORRACHEIRO RS</h4>
                 <p className="text-xs text-green-500">Online agora</p>
               </div>
             </div>

@@ -1,3 +1,4 @@
+
 import { Clock, Users, Truck, Award, CheckCircle, TrendingUp } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -94,7 +95,7 @@ const AboutSection = () => {
             <h3 className="text-2xl sm:text-3xl font-bold text-foreground">Do Sonho à Realidade</h3>
             <div className="space-y-4 text-muted-foreground leading-relaxed text-sm sm:text-base">
               <p>
-                Nossas atividades iniciaram em meados de 2013, quando começamos a trilhar o caminho que nos levaria ao que hoje é a LOJA DO BORRACHEIRO. De início era o sonho de um homem que sempre foi empreendedor, e que com recursos limitados, um automóvel Celta e um pequeno estoque de abraçadeiras e borrachas de escapamentos.
+                Nossas atividades iniciaram em meados de 2013, quando começamos a trilhar o caminho que nos levaria ao que hoje é a LOJA DO BORRACHEIRO RS. De início era o sonho de um homem que sempre foi empreendedor, e que com recursos limitados, um automóvel Celta e um pequeno estoque de abraçadeiras e borrachas de escapamentos.
               </p>
               <p>
                 Em menos de um ano aquele valente Celta não comportava mais o volume e nem o peso das mercadorias, levando à necessidade de um veículo com mais espaço. Foi quando houve a aquisição de um Fiat Doblô, facilitando o trabalho e aumentando nossa capacidade de atendimento.
@@ -110,7 +111,7 @@ const AboutSection = () => {
               <div className="aspect-square bg-gradient-to-br from-primary/10 to-primary/5 rounded-xl sm:rounded-2xl flex items-center justify-center">
                 <img 
                   src="/lovable-uploads/01e636d7-7ca8-47cf-a97f-47b4d0390a04.png" 
-                  alt="LOJA DO BORRACHEIRO - Nossa história" 
+                  alt="LOJA DO BORRACHEIRO RS - Nossa história" 
                   className="w-3/4 h-3/4 object-contain"
                 />
               </div>

@@ -24,7 +24,7 @@ const HeroSection = () => {
             <div className="space-y-4">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 LOJA DO
-                <span className="block text-secondary">BORRACHEIRO</span>
+                <span className="block text-secondary">BORRACHEIRO RS</span>
               </h1>
               <p className="text-lg sm:text-xl lg:text-2xl opacity-90 leading-relaxed">
                 Produtos para borracharia e auto center
@@ -95,7 +95,7 @@ const HeroSection = () => {
                 <div className="aspect-square bg-gradient-to-br from-secondary/20 to-secondary/5 rounded-xl sm:rounded-2xl flex items-center justify-center p-4">
                   <img 
                     src="/lovable-uploads/8e175678-0d4e-4e16-a1ce-5fe2d22dea33.png" 
-                    alt="LOJA DO BORRACHEIRO - Mascote profissional" 
+                    alt="LOJA DO BORRACHEIRO RS - Mascote profissional" 
                     className="w-full h-full object-contain"
                   />
                 </div>
