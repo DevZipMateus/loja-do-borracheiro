@@ -1,3 +1,4 @@
+
 import { Phone, Mail, MapPin, Facebook, Instagram, Heart } from "lucide-react";
 
 const Footer = () => {
@@ -18,7 +19,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <img 
-                src="/lovable-uploads/bb7abda3-e754-4615-9024-79356f09a9fd.png" 
+                src="/lovable-uploads/8e175678-0d4e-4e16-a1ce-5fe2d22dea33.png" 
                 alt="LOJA DO BORRACHEIRO RS" 
                 className="h-12 w-auto"
               />
